@@ -29,8 +29,26 @@ A Deno module to shuffle the array's indexes.
 - Deno >= v1.34.0
 
 ```ts
-import shuffleArray from "https://deno.land/x/shuffle_array/mod.ts";// Default Import
+import shuffleArray from "<URL>";// Default Import
 ```
+
+| **Domain / Registry** | **URL** |
+|:-:|:--|
+| [Deno Land](https://deno.land/x/shuffle_array) | `https://deno.land/x/shuffle_array[@<Tag>]/mod.ts` |
+| DenoPKG | `https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts` |
+| GitHub Raw | `https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts` |
+| Nest Land | *Todo* |
+| Pax | `https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts` |
+
+> **⚠ Important:**
+>
+> - These domains/registries are not well supported to import this package:
+>   - ESM>CDN (https://esm.sh)
+>   - jsDelivr (https://cdn.jsdelivr.net)
+>   - JSPM (https://dev.jspm.io)
+>   - Skypack (https://cdn.pika.dev, https://cdn.skypack.dev)
+>   - UNPKG (https://unpkg.com)
+> - Using domain/registry GitHub Raw must provide a tag; For alternative, use domain/registry Pax.
 
 ### API
 
