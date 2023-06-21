@@ -50,7 +50,7 @@ shuffleArray<T>(item: T[]): T[];
 
 ### Example
 
-```js
+```ts
 let chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
 
 shuffleArray(chain);
