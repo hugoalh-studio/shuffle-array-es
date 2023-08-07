@@ -21,7 +21,7 @@ A Deno module to shuffle the array's indexes.
 >
 > - [NodeJS](https://github.com/hugoalh-studio/shuffle-array-nodejs)
 
-## 📚 Documentation
+## 📓 Documentation
 
 ### Getting Started
 
