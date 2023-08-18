@@ -1,19 +1,19 @@
 import { assertThrows } from "https://deno.land/std@0.198.0/assert/assert_throws.ts";
 import shuffleArray from "./mod.ts";
 Deno.test({
-	name: "P-0",
+	name: "P-1",
 	fn: () => {
 		shuffleArray([]);
 	}
 });
 Deno.test({
-	name: "P-1",
+	name: "P-2",
 	fn: () => {
 		shuffleArray([1n, 2n, 3n]);
 	}
 });
 Deno.test({
-	name: "P-2",
+	name: "P-3",
 	fn: () => {
 		shuffleArray([3, 7, 25, 26, 42, 62, 71, 76, 92, 93]);
 	}
