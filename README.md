@@ -40,7 +40,7 @@ function shuffleArray<T>(item: T[]): T[];
 ### Example
 
 - ```ts
-  let chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
+  const chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
   
   shuffleArray(chain);
   //=> [62, 93, 26, 42, 25, 7, 76, 71, 3, 92]
