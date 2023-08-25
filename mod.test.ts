@@ -1,4 +1,4 @@
-import { assertThrows } from "https://deno.land/std@0.199.0/assert/assert_throws.ts";
+import { assertThrows } from "https://deno.land/std@0.200.0/assert/assert_throws.ts";
 import shuffleArray from "./mod.ts";
 Deno.test("Success 1", () => {
 	shuffleArray([]);
