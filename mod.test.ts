@@ -5,7 +5,7 @@ Deno.test("Empty", () => {
 Deno.test("3 Elements", () => {
 	shuffleArray([1n, 2n, 3n]);
 });
-Deno.test("Example", () => {
+Deno.test("10 Elements", () => {
 	shuffleArray([3, 7, 25, 26, 42, 62, 71, 76, 92, 93]);
 });
 Deno.test("15 Elements", () => {

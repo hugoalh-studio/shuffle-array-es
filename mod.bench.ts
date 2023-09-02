@@ -5,7 +5,7 @@ Deno.bench("Empty", () => {
 Deno.bench("3 Elements", () => {
 	shuffleArray([1n, 2n, 3n]);
 });
-Deno.bench("Example", () => {
+Deno.bench("10 Elements", () => {
 	shuffleArray([3, 7, 25, 26, 42, 62, 71, 76, 92, 93]);
 });
 Deno.bench("15 Elements", () => {
