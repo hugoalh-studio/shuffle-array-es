@@ -6,6 +6,9 @@ import { randomInt } from "node:crypto";
  * @returns {T[]} An indexes shuffled array.
  */
 export default function shuffleArray<T>(item: T[]): T[] {
+	if (!Array.isArray(item)) {
+		throw new TypeError(`Argument \`item\` is not an Array!`);
+	}
 	const itemClone: T[] = [...item];
 	const result: T[] = [];
 	while (itemClone.length > 1) {
