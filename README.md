@@ -20,6 +20,7 @@ A Deno module to shuffle the array's indexes.
 - Deno >= v1.34.0
 
 ```ts
+/* Either */
 import { ... } from "<URL>";// Named Import
 import * as shuffleArray from "<URL>";// Namespace Import
 import shuffleArray from "<URL>";// Default Import (Function `shuffleArray`)
