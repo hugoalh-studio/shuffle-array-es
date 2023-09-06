@@ -17,7 +17,7 @@ A Deno module to shuffle the array's indexes.
 
 - Deno >= v1.34.0
 
-## 📥 Use
+## 📥 Import
 
 > **ℹ️ Notice:** Although it is recommended to import with default module path `mod.ts` in general, it is also able to import with submodule path (if available), but do not import that submodule if either:
 >
@@ -35,7 +35,7 @@ A Deno module to shuffle the array's indexes.
   ```
   https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
   ```
-- **GitHub Raw: *\[Require Tag\]***
+- **GitHub Raw *\[Require Tag\]*:**
   ```
   https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts
   ```
