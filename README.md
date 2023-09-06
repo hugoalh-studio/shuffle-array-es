@@ -19,14 +19,13 @@ A Deno module to shuffle the array's indexes.
 
 ## 📥 Use
 
-### Import
-
-- **Named Import:** ✔️
-- **Default Import:** Function `shuffleArray`
-- **Namespace Import:** ✔️
-- **Side Effect Import:** ❌
-
-### From
+> **ℹ️ Notice:** Although it is recommended to import with default module path `mod.ts` in general, it is also able to import with submodule path (if available), but do not import that submodule if either:
+>
+> - It's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`).
+> - It is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`).
+> - It's symbol has an underscore prefix (e.g.: `export function _baz() {}`).
+>
+> These elements are not considered part of the public API, thus no stability is guaranteed for them.
 
 - **[Deno Land](https://deno.land/x/shuffle_array):**
   ```
@@ -54,6 +53,7 @@ A Deno module to shuffle the array's indexes.
 ## Example
 
 - ```ts
+  import shuffleArray from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts";
   const chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
   
   shuffleArray(chain);
