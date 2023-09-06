@@ -13,35 +13,45 @@ A Deno module to shuffle the array's indexes.
 >
 > - [NodeJS](https://github.com/hugoalh-studio/shuffle-array-nodejs)
 
-## 📓 Documentation
-
-### Getting Started
+## 🎯 Target
 
 - Deno >= v1.34.0
 
-```ts
-/* Either */
-import { ... } from "<URL>";// Named Import
-import * as shuffleArray from "<URL>";// Namespace Import
-import shuffleArray from "<URL>";// Default Import (Function `shuffleArray`)
-```
+## 📥 Use
 
-| **Domain / Registry** | **URL** |
-|:-:|:--|
-| [Deno Land](https://deno.land/x/shuffle_array) | `https://deno.land/x/shuffle_array[@<Tag>]/mod.ts` |
-| DenoPKG | `https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts` |
-| GitHub Raw **\*** | `https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts` |
-| Pax | `https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts` |
+### Import
 
-**\*:** Must provide a tag.
+- **Named Import:** ✔️
+- **Default Import:** Function `shuffleArray`
+- **Namespace Import:** ✔️
+- **Side Effect Import:** ❌
 
-### API
+### From
 
-```ts
-function shuffleArray<T>(item: T[]): T[];
-```
+- **[Deno Land](https://deno.land/x/shuffle_array):**
+  ```
+  https://deno.land/x/shuffle_array[@<Tag>]/mod.ts
+  ```
+- **DenoPKG:**
+  ```
+  https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
+  ```
+- **GitHub Raw: *\[Require Tag\]***
+  ```
+  https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts
+  ```
+- **Pax:**
+  ```
+  https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
+  ```
 
-### Example
+## API
+
+- ```ts
+  function shuffleArray<T>(item: T[]): T[];
+  ```
+
+## Example
 
 - ```ts
   const chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
