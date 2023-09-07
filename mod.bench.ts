@@ -1,4 +1,4 @@
-import shuffleArray from "./mod.ts";
+import { shuffleArray } from "./mod.ts";
 Deno.bench("Empty", { permissions: "none" }, () => {
 	shuffleArray([]);
 });
