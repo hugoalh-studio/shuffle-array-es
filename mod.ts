@@ -16,12 +16,11 @@ import { randomInt } from "node:crypto";
 export function shuffleArray<T>(item: T[]): T[] {
 	const itemClone: T[] = [...item];
 	const result: T[] = [];
-	while (itemClone.length > 1) {
+	while (itemClone.length > 0) {
 		const index: number = randomInt(0, itemClone.length);
 		result.push(itemClone[index]);
 		itemClone.splice(index, 1);
 	}
-	result.push(itemClone[0]);
 	return result;
 }
 export default shuffleArray;
