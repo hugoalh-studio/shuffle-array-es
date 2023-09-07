@@ -49,11 +49,8 @@ A Deno module to shuffle the array's indexes.
 
 > **ℹ️ Notice:** Documentation is included inside the script file, can view it via:
 >
-> - Deno CLI `deno doc [Options] [SourceFile] [Filter]`
->   ```sh
->   deno doc https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts
->   ```
-> - [Deno Doc Land](https://doc.deno.land/https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts)
+> - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
+> - [Deno Doc Land](https://doc.deno.land)
 
 ## ✍️ Example
 
