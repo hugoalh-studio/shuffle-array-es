@@ -9,51 +9,53 @@
 
 A Deno module to shuffle the array's indexes.
 
-> **🔗 Other Edition:**
->
-> - [NodeJS](https://github.com/hugoalh-studio/shuffle-array-nodejs)
-
 ## 📥 Import
 
 ### Deno
 
 - **Target Version:** >= v1.34.0
 - **Require Permission:** *N/A*
+- **Domain/Registry:**
+  - **[Deno Land](https://deno.land/x/shuffle_array):**
+    ```
+    https://deno.land/x/shuffle_array[@<Tag>]/mod.ts
+    ```
+  - **DenoPKG:**
+    ```
+    https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
+    ```
+  - **GitHub Raw *\[Require Tag\]*:**
+    ```
+    https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts
+    ```
+  - **Pax:**
+    ```
+    https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
+    ```
 
-#### From
-
-> **ℹ️ Notice:** Although it is recommended to import with default module path `mod.ts` in general, it is also able to import with submodule path (if available), but do not import that submodule if either:
+> **ℹ️ Notice:** Although it is recommended to import module with main path `mod.ts` in general, it is also able to import part of the module with sub path (if available), but do not import if:
 >
-> - It's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`).
-> - It is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`).
-> - It's symbol has an underscore prefix (e.g.: `export function _baz() {}`).
+> - it's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`), or
+> - it is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`), or
+> - it's symbol has an underscore prefix (e.g.: `export function _baz() {}`).
 >
 > These elements are not considered part of the public API, thus no stability is guaranteed for them.
 
-- **[Deno Land](https://deno.land/x/shuffle_array):**
-  ```
-  https://deno.land/x/shuffle_array[@<Tag>]/mod.ts
-  ```
-- **DenoPKG:**
-  ```
-  https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
-  ```
-- **GitHub Raw *\[Require Tag\]*:**
-  ```
-  https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts
-  ```
-- **Pax:**
-  ```
-  https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts
-  ```
-
-## API
+## 🧩 API
 
 - ```ts
   function shuffleArray<T>(item: T[]): T[];
   ```
 
-## Example
+> **ℹ️ Notice:** Documentation is included inside the script file, can view it via:
+>
+> - Deno CLI `deno doc [Options] [SourceFile] [Filter]`
+>   ```sh
+>   deno doc https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts
+>   ```
+> - [Deno Doc Land](https://doc.deno.land/https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts)
+
+## ✍️ Example
 
 - ```ts
   import shuffleArray from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts";
@@ -65,3 +67,7 @@ A Deno module to shuffle the array's indexes.
   shuffleArray(chain);
   //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
   ```
+
+## 🔗 Other Edition
+
+- [NodeJS](https://github.com/hugoalh-studio/shuffle-array-nodejs)
