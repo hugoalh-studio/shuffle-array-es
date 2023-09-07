@@ -1,8 +1,7 @@
 import { assertEquals } from "https://deno.land/std@0.201.0/assert/assert_equals.ts";
 import { shuffleArray } from "./mod.ts";
 Deno.test("Empty", { permissions: "none" }, () => {
-	const output = shuffleArray([]);
-	assertEquals(output.length, 0);
+	assertEquals(shuffleArray([]), []);
 });
 Deno.test("3 Elements", { permissions: "none" }, () => {
 	const output = shuffleArray([1n, 2n, 3n]);
