@@ -55,7 +55,7 @@ A Deno module to shuffle the array's indexes.
 ## ✍️ Example
 
 - ```ts
-  import shuffleArray from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts";
+  import { shuffleArray } from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/main/mod.ts";
   const chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
 
   shuffleArray(chain);
