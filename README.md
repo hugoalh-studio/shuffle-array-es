@@ -1,7 +1,6 @@
 # Shuffle Array (Deno)
 
 [⚖️ MIT](./LICENSE.md)
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/hugoalh-studio/shuffle-array-deno?label=Grade&logo=codefactor&logoColor=ffffff&style=flat-square "CodeFactor Grade")](https://www.codefactor.io/repository/github/hugoalh-studio/shuffle-array-deno)
 
 |  | **Release - Latest** | **Release - Pre** |
 |:-:|:-:|:-:|
@@ -15,7 +14,7 @@ A Deno module to shuffle the array's indexes.
 
 - **Target Version:** >= v1.34.0
 - **Require Permission:** *N/A*
-- **Domain/Registry:**
+- **Registry:**
   - [Deno Land](https://deno.land/x/shuffle_array)
     ```ts
     import ... from "https://deno.land/x/shuffle_array[@<Tag>]/mod.ts";
