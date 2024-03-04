@@ -10,9 +10,9 @@
 > | 🟠 | Maintenance |
 > | 🔴 | End Of Life / Not Supported |
 
-| **Versions** | **Status** | **🔵 Date** | **🟢 Date** | **🔴 Date** | **Target - Deno** |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| v1.X.X | 🟢 | 2023-06-16 | 2023-07-01 | *Unknown* | >= v1.34.0 |
+| **Versions** | **Status** | **🔵 Date** | **🟢 Date** | **🔴 Date** |
+|:-:|:-:|:-:|:-:|:-:|
+| v1.X.X | 🟢 | 2023-06-16 | 2023-07-01 | *Unknown* |
 
 > **ℹ️ Notice:**
 >

@@ -1,0 +1,15 @@
+{
+	"name": "@hugoalh/shuffly-array",
+	"version": "1.0.7",
+	"exports":{
+		".": "./mod.ts"
+	},
+	"exclude": [
+		"**/*.bench.ts",
+		"**/*.test.ts",
+		"**/*.cff",
+		"deno.jsonc",
+		"SECURITY.md",
+		"targets.tsv"
+	]
+}
