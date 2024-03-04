@@ -1,5 +1,5 @@
 {
-	"name": "@hugoalh/shuffly-array",
+	"name": "@hugoalh/shuffle-array",
 	"version": "1.0.7",
 	"exports":{
 		".": "./mod.ts"
