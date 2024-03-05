@@ -40,11 +40,15 @@ A TypeScript module to shuffle the array's indexes.
 </tbody>
 </table>
 
+### 🔗 Other Edition
+
+- [JavaScript](https://github.com/hugoalh-studio/shuffle-array-js)
+
 ## 🔰 Usage
 
 ### Via HTTPS
 
-> **🎯 Supported Target:**
+> **🎯 Supported Target**
 >
 > - Deno
 
@@ -77,7 +81,9 @@ A TypeScript module to shuffle the array's indexes.
       ```ts
       import ... from "https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts";
       ```
-    > **ℹ️ Notice:** Although it is recommended to import main module with path `mod.ts` in general, it is also able to import part of the module with sub path if available, but do not import if:
+    > **ℹ️ Note**
+    >
+    > Although it is recommended to import the entire module with the main path `mod.ts`, it is also able to import part of the module with sub path if available, but do not import if:
     >
     > - it's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`), or
     > - it is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`), or
@@ -87,7 +93,7 @@ A TypeScript module to shuffle the array's indexes.
 
 ### Via JSR With Native Support
 
-> **🎯 Supported Target:**
+> **🎯 Supported Target**
 >
 > - Deno
 
@@ -95,11 +101,13 @@ A TypeScript module to shuffle the array's indexes.
     ```ts
     import ... from "jsr:@hugoalh/shuffle-array[@<Tag>]";
     ```
-    > **ℹ️ Notice:** Although it is recommended to import main module in general, it is also able to import part of the module with sub path if available, see [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+    > **ℹ️ Note**
+    >
+    > Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
 
 ### Via JSR With NPM Compatibility Layer Support
 
-> **🎯 Supported Target:**
+> **🎯 Supported Target**
 >
 > - Bun
 > - Cloudflare Workers
@@ -126,7 +134,9 @@ A TypeScript module to shuffle the array's indexes.
     ```ts
     import ... from "@hugoalh/shuffle-array";
     ```
-    > **ℹ️ Notice:** Although it is recommended to import main module in general, it is also able to import part of the module with sub path if available, see [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+    > **ℹ️ Note**
+    >
+    > Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
 
 ## 🧩 API
 
@@ -134,7 +144,9 @@ A TypeScript module to shuffle the array's indexes.
   function shuffleArray<T>(item: T[]): T[];
   ```
 
-> **ℹ️ Notice:** Documentation is included inside the script file, can view it via:
+> **ℹ️ Note**
+>
+> For the prettier documentation, can visit via:
 >
 > - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
 > - [JSR](https://jsr.io/@hugoalh/shuffle-array)
@@ -150,7 +162,3 @@ A TypeScript module to shuffle the array's indexes.
   shuffleArray(chain);
   //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
   ```
-
-## 🔗 Other Edition
-
-- [NodeJS](https://github.com/hugoalh-studio/shuffle-array-nodejs)
