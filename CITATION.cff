@@ -9,5 +9,6 @@ repository-code: "https://github.com/hugoalh-studio/shuffle-array-ts"
 keywords:
   - "array"
   - "shuffle"
+  - "ts"
   - "typescript"
 license: "MIT"
