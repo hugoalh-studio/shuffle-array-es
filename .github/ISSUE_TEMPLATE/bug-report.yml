@@ -55,7 +55,7 @@ body:
 
         > [!NOTE]
         > - Accept versions range.
-        > - Versions must be listed as supported in the Security Policy (file: `SECURITY.md`).
+        > - Versions must be listed as supported in the Security Policy (file `SECURITY.md`).
       placeholder: |-
         1.2.3
     validations:
