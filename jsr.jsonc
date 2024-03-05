@@ -6,8 +6,8 @@
 	},
 	"exclude": [
 		"**/*.bench.ts",
-		"**/*.test.ts",
 		"**/*.cff",
+		"**/*.test.ts",
 		"deno.jsonc",
 		"SECURITY.md",
 		"targets.tsv"
