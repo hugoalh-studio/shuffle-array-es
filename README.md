@@ -13,13 +13,13 @@ A TypeScript module to shuffle the array's indexes.
 
 ## 🎯 Target
 
-- **Bun:** ^ v1.0.0
-- **Cloudflare Workers:** \*
-- **Deno:** >= v1.34.0 / >= v1.41.1 *(Via JSR)*
+- Bun ^ v1.0.0
+- Cloudflare Workers
+- Deno >= v1.34.0 / >= v1.41.1 *(Via JSR)*
   > **🛡️ Require Permission**
   >
   > *N/A*
-- **NodeJS:** >= v16.13.0
+- NodeJS >= v16.13.0
 
 ### 🔗 Other Edition
 
