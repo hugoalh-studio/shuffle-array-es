@@ -28,4 +28,3 @@ jobs:
     uses: "hugoalh/hugoalh/.github/workflows/call-review-deno-code-1.yml@main"
     with:
       runon: "${{matrix.runon}}"
-      registry_jsr: true
