@@ -1,5 +1,5 @@
 import { shuffleArray } from "./mod.ts";
-Deno.bench("Empty", { permissions: "none" }, () => {
+Deno.bench("0 Elements", { permissions: "none" }, () => {
 	shuffleArray([]);
 });
 Deno.bench("3 Elements", { permissions: "none" }, () => {
