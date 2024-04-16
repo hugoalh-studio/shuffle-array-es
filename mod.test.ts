@@ -1,4 +1,4 @@
-import { assertEquals } from "TEST/assert_equals.ts";
+import { assertEquals } from "STD/assert/assert_equals.ts";
 import { shuffleArray } from "./mod.ts";
 Deno.test("0 Elements", { permissions: "none" }, () => {
 	const output = shuffleArray([]);

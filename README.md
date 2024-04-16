@@ -1,92 +1,27 @@
-# Shuffle Array (TypeScript)
+# Shuffle Array (ES)
 
 [**⚖️** MIT](./LICENSE.md)
 
-**🗂️**
-[![GitHub: hugoalh-studio/shuffle-array-ts](https://img.shields.io/badge/hugoalh--studio/shuffle--array--ts-181717?logo=github&logoColor=ffffff&style=flat "GitHub: hugoalh-studio/shuffle-array-ts")](https://github.com/hugoalh-studio/shuffle-array-ts)
-[![Deno Land: shuffle_array](https://img.shields.io/badge/shuffle__array-000000?logo=deno&logoColor=ffffff&style=flat "Deno Land: shuffle_array")](https://deno.land/x/shuffle_array)
-[![JSR: @hugoalh/shuffle-array](https://img.shields.io/badge/JSR-@hugoalh/shuffle--array-F7DF1E?labelColor=F7DF1E&logoColor=000000&style=flat "JSR: @hugoalh/shuffle-array")](https://jsr.io/@hugoalh/shuffle-array)
+[![Deno Land: shuffle_array](https://img.shields.io/badge/dynamic/json?label=shuffle_array&labelColor=000000&logo=deno&logoColor=ffffff&style=flat&url=https%3A%2F%2Fapiland.deno.dev%2Fv2%2Fmodules%2Fshuffle_array&query=%24.latest_version "Deno Land: shuffle_array")](https://deno.land/x/shuffle_array)
+[![GitHub: hugoalh-studio/shuffle-array-es](https://img.shields.io/github/v/release/hugoalh-studio/shuffle-array-es?label=hugoalh-studio/shuffle-array-es&labelColor=181717&logo=github&logoColor=ffffff&sort=semver&style=flat "GitHub: hugoalh-studio/shuffle-array-es")](https://github.com/hugoalh-studio/shuffle-array-es)
+[![JSR: @hugoalh/shuffle-array](https://img.shields.io/jsr/v/@hugoalh/shuffle-array?label=JSR%20@hugoalh/shuffle-array&labelColor=F7DF1E&logoColor=000000&style=flat "JSR: @hugoalh/shuffle-array")](https://jsr.io/@hugoalh/shuffle-array)
+[![NPM: @hugoalh/shuffle-array](https://img.shields.io/npm/v/@hugoalh/shuffle-array?label=@hugoalh/shuffle-array&labelColor=CB3837&logo=npm&logoColor=ffffff&style=flat "NPM: @hugoalh/shuffle-array")](https://www.npmjs.com/package/@hugoalh/shuffle-array)
 
-**🆙** ![Latest Release Version](https://img.shields.io/github/release/hugoalh-studio/shuffle-array-ts?sort=semver&color=2187C0&label=&style=flat "Latest Release Version") (![Latest Release Date](https://img.shields.io/github/release-date/hugoalh-studio/shuffle-array-ts?color=2187C0&label=&style=flat "Latest Release Date"))
-
-A TypeScript module to shuffle the array's indexes.
+An ES (JavaScript & TypeScript) module to shuffle the array's indexes.
 
 ## 🎯 Target
 
 - Bun ^ v1.0.0
 - Cloudflare Workers
-- Deno >= v1.34.0 / >= v1.41.1 *(Via JSR)*
+- Deno >= v1.34.0 / >= v1.41.1 (For JSR Only)
   > **🛡️ Require Permission**
   >
   > *N/A*
 - NodeJS >= v16.13.0
 
-### 🔗 Other Edition
-
-- [JavaScript](https://github.com/hugoalh-studio/shuffle-array-js)
-
 ## 🔰 Usage
 
-### Via HTTPS
-
-> **🎯 Supported Target**
->
-> - Deno
-
-1. Import at the script (`<ScriptName>.ts`):
-    - Via Deno Land
-      ```ts
-      import ... from "https://deno.land/x/shuffle_array[@<Tag>]/mod.ts";
-      ```
-    - Via DenoPKG
-      ```ts
-      import ... from "https://denopkg.com/hugoalh-studio/shuffle-array-ts[@<Tag>]/mod.ts";
-      ```
-    - Via DenoPKG (Legacy)
-      ```ts
-      import ... from "https://denopkg.com/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts";
-      ```
-    - Via GitHub Raw (Require Tag)
-      ```ts
-      import ... from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-ts/<Tag>/mod.ts";
-      ```
-    - Via GitHub Raw (Legacy)(Require Tag)
-      ```ts
-      import ... from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-deno/<Tag>/mod.ts";
-      ```
-    - Via Pax
-      ```ts
-      import ... from "https://pax.deno.dev/hugoalh-studio/shuffle-array-ts[@<Tag>]/mod.ts";
-      ```
-    - Via Pax (Legacy)
-      ```ts
-      import ... from "https://pax.deno.dev/hugoalh-studio/shuffle-array-deno[@<Tag>]/mod.ts";
-      ```
-    > **ℹ️ Note**
-    >
-    > Although it is recommended to import the entire module with the main path `mod.ts`, it is also able to import part of the module with sub path if available, but do not import if:
-    >
-    > - it's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`), or
-    > - it is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`), or
-    > - it's symbol has an underscore prefix (e.g.: `export function _baz() {}`).
-    >
-    > These elements are not considered part of the public API, thus no stability is guaranteed for them.
-
-### Via JSR With Native Support
-
-> **🎯 Supported Target**
->
-> - Deno
-
-1. Import at the script (`<ScriptName>.ts`):
-    ```ts
-    import ... from "jsr:@hugoalh/shuffle-array[@<Tag>]";
-    ```
-    > **ℹ️ Note**
-    >
-    > Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
-
-### Via JSR With NPM Compatibility Layer Support
+### Via JSR With `node_modules`
 
 > **🎯 Supported Target**
 >
@@ -94,30 +29,123 @@ A TypeScript module to shuffle the array's indexes.
 > - Cloudflare Workers
 > - NodeJS
 
-1. Install via console/shell/terminal:
-    - Via Bun
+1. Install via:
+    - Bun
       ```sh
-      bunx jsr add @hugoalh/shuffle-array[@<Tag>]
+      bunx jsr add @hugoalh/shuffle-array[@${Tag}]
       ```
-    - Via NPM
+    - NPM
       ```sh
-      npx jsr add @hugoalh/shuffle-array[@<Tag>]
+      npx jsr add @hugoalh/shuffle-array[@${Tag}]
       ```
-    - Via PNPM
+    - PNPM
       ```sh
-      pnpm dlx jsr add @hugoalh/shuffle-array[@<Tag>]
+      pnpm dlx jsr add @hugoalh/shuffle-array[@${Tag}]
       ```
-    - Via Yarn
+    - Yarn
       ```sh
-      yarn dlx jsr add @hugoalh/shuffle-array[@<Tag>]
+      yarn dlx jsr add @hugoalh/shuffle-array[@${Tag}]
       ```
-2. Import at the script (`<ScriptName>.ts`):
+2. Import at the script:
     ```ts
     import ... from "@hugoalh/shuffle-array";
     ```
-    > **ℹ️ Note**
-    >
-    > Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+
+> **ℹ️ Note**
+>
+> - Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+> - It is recommended to import the module with tag for immutability.
+
+### Via JSR With Specifier
+
+> **🎯 Supported Target**
+>
+> - Deno
+
+1. Import at the script:
+    ```ts
+    import ... from "jsr:@hugoalh/shuffle-array[@${Tag}]";
+    ```
+
+> **ℹ️ Note**
+>
+> - Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+> - It is recommended to import the module with tag for immutability.
+
+### Via NPM With `node_modules`
+
+> **🎯 Supported Target**
+>
+> - Cloudflare Workers
+> - NodeJS
+
+1. Install via:
+    - NPM
+      ```sh
+      npm install @hugoalh/shuffle-array[@${Tag}]
+      ```
+    - PNPM
+      ```sh
+      pnpm add @hugoalh/shuffle-array[@${Tag}]
+      ```
+    - Yarn
+      ```sh
+      yarn add @hugoalh/shuffle-array[@${Tag}]
+      ```
+2. Import at the script:
+    ```ts
+    import ... from "@hugoalh/shuffle-array";
+    ```
+
+> **ℹ️ Note**
+>
+> - Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+> - It is recommended to import the module with tag for immutability.
+
+### Via NPM With Specifier
+
+> **🎯 Supported Target**
+>
+> - Bun
+> - Deno
+
+1. Import at the script:
+    ```ts
+    import ... from "npm:@hugoalh/shuffle-array[@${Tag}]";
+    ```
+
+> **ℹ️ Note**
+>
+> - Although it is recommended to import the entire module, it is also able to import part of the module with sub path if available, please visit [file `jsr.jsonc`](./jsr.jsonc) property `exports` for available sub paths.
+> - It is recommended to import the module with tag for immutability.
+
+### Via Remote Import
+
+> **🎯 Supported Target**
+>
+> - Deno
+
+1. Import at the script via:
+    - Deno Land
+      ```ts
+      import ... from "https://deno.land/x/shuffle_array[@${Tag}]/mod.ts";
+      ```
+    - GitHub Raw (Require Tag)
+      ```ts
+      import ... from "https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-es/${Tag}/mod.ts";
+      ```
+
+> **ℹ️ Note**
+>
+> - Although it is recommended to import the entire module with the main path `mod.ts`, it is also able to import part of the module with sub path if available, but do not import if:
+>
+>   - it's file path has an underscore prefix (e.g.: `_foo.ts`, `_util/bar.ts`), or
+>   - it is a benchmark or test file (e.g.: `foo.bench.ts`, `foo.test.ts`), or
+>   - it's symbol has an underscore prefix (e.g.: `export function _baz() {}`).
+>
+>   These elements are not considered part of the public API, thus no stability is guaranteed for them.
+> - Although there have 3rd party services which provide enhanced, equal, or similar methods/ways to remote import the module, beware these services maybe inject unrelated elements and thus affect the security.
+> - It is recommended to import the module with tag for immutability.
 
 ## 🧩 API
 
@@ -130,6 +158,7 @@ A TypeScript module to shuffle the array's indexes.
 > For the prettier documentation, can visit via:
 >
 > - [Deno CLI `deno doc`](https://deno.land/manual/tools/documentation_generator)
+> - [Deno Land](https://deno.land/x/shuffle_array)
 > - [JSR](https://jsr.io/@hugoalh/shuffle-array)
 
 ## ✍️ Example
