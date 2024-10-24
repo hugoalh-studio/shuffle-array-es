@@ -18,15 +18,15 @@ await invokeDenoNodeJSTransformer({
 			"array",
 			"shuffle"
 		],
-		homepage: "https://github.com/hugoalh-studio/shuffle-array-es#readme",
+		homepage: "https://github.com/hugoalh/shuffle-array-es#readme",
 		bugs: {
-			url: "https://github.com/hugoalh-studio/shuffle-array-es/issues"
+			url: "https://github.com/hugoalh/shuffle-array-es/issues"
 		},
 		license: "MIT",
 		author: "hugoalh",
 		repository: {
 			type: "git",
-			url: "git+https://github.com/hugoalh-studio/shuffle-array-es.git"
+			url: "git+https://github.com/hugoalh/shuffle-array-es.git"
 		},
 		scripts: {
 		},

@@ -3,7 +3,7 @@
 [**⚖️** MIT](./LICENSE.md)
 
 [![Deno Land: shuffle_array](https://img.shields.io/badge/dynamic/json?label=shuffle_array&labelColor=000000&logo=deno&logoColor=ffffff&style=flat&url=https%3A%2F%2Fapiland.deno.dev%2Fv2%2Fmodules%2Fshuffle_array&query=%24.latest_version "Deno Land: shuffle_array")](https://deno.land/x/shuffle_array)
-[![GitHub: hugoalh-studio/shuffle-array-es](https://img.shields.io/github/v/release/hugoalh-studio/shuffle-array-es?label=hugoalh-studio/shuffle-array-es&labelColor=181717&logo=github&logoColor=ffffff&sort=semver&style=flat "GitHub: hugoalh-studio/shuffle-array-es")](https://github.com/hugoalh-studio/shuffle-array-es)
+[![GitHub: hugoalh/shuffle-array-es](https://img.shields.io/github/v/release/hugoalh/shuffle-array-es?label=hugoalh/shuffle-array-es&labelColor=181717&logo=github&logoColor=ffffff&sort=semver&style=flat "GitHub: hugoalh/shuffle-array-es")](https://github.com/hugoalh/shuffle-array-es)
 [![JSR: @hugoalh/shuffle-array](https://img.shields.io/jsr/v/@hugoalh/shuffle-array?label=@hugoalh/shuffle-array&labelColor=F7DF1E&logo=jsr&logoColor=000000&style=flat "JSR: @hugoalh/shuffle-array")](https://jsr.io/@hugoalh/shuffle-array)
 [![NPM: @hugoalh/shuffle-array](https://img.shields.io/npm/v/@hugoalh/shuffle-array?label=@hugoalh/shuffle-array&labelColor=CB3837&logo=npm&logoColor=ffffff&style=flat "NPM: @hugoalh/shuffle-array")](https://www.npmjs.com/package/@hugoalh/shuffle-array)
 
@@ -31,7 +31,7 @@ An ES (JavaScript & TypeScript) module to shuffle the array's indexes.
   ```
 - **Remote - GitHub Raw:**
   ```
-  https://raw.githubusercontent.com/hugoalh-studio/shuffle-array-es/{Tag}/mod.ts
+  https://raw.githubusercontent.com/hugoalh/shuffle-array-es/{Tag}/mod.ts
   ```
 - **JSR:**
   ```
