@@ -1,8 +1,12 @@
-import { randomInt } from "node:crypto";
+/**
+ * A pseudo random number generator which takes zero arguments and returns a random number in the range of `>= 0` and `< 1`.
+ */
+export type PseudoRandomNumberGenerator = () => number;
 /**
  * Shuffle the array's indexes.
  * @template {unknown} T
  * @param {readonly T[]} item Array that need to shuffle indexes.
+ * @param {PseudoRandomNumberGenerator} [prng=Math.random] A pseudo random number generator which takes zero arguments and returns a random number in the range of `>= 0` and `< 1`. This uses {@linkcode Math.random} by default, or specify a better pseudo random number generator.
  * @returns {T[]} An indexes shuffled array.
  * @example
  * ```ts
@@ -15,13 +19,17 @@ import { randomInt } from "node:crypto";
  * //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
  * ```
  */
-export function shuffleArray<T>(item: readonly T[]): T[] {
+export function shuffleArray<T>(item: readonly T[], prng: PseudoRandomNumberGenerator = Math.random): T[] {
 	const itemClone: T[] = [...item];
 	const result: T[] = [];
 	while (itemClone.length > 0) {
-		const index: number = randomInt(0, itemClone.length);
-		result.push(itemClone[index]);
-		itemClone.splice(index, 1);
+		const n: number = prng();
+		if (!(n >= 0 && n < 1)) {
+			throw new Error(`Invalid pseudo random number generator! Expect a number which >= 0 and < 1; Current \`${n}\`.`);
+		}
+		const i: number = Math.floor(n * itemClone.length);
+		result.push(itemClone[i]);
+		itemClone.splice(i, 1);
 	}
 	return result;
 }
