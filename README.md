@@ -72,11 +72,11 @@ An ES (JavaScript & TypeScript) module to shuffle the array's indexes.
 ## ✍️ Examples
 
 - ```ts
-  const chain = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
+  const item = [3, 7, 25, 26, 42, 62, 71, 76, 92, 93];
 
-  shuffleArray(chain);
+  shuffleArray(item);
   //=> [62, 93, 26, 42, 25, 7, 76, 71, 3, 92]
 
-  shuffleArray(chain);
+  shuffleArray(item);
   //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
   ```
