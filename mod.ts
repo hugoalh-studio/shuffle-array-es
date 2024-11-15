@@ -2,7 +2,7 @@ import { randomInt } from "node:crypto";
 /**
  * Shuffle the array's indexes.
  * @template {unknown} T
- * @param {T[]} item Array that need to shuffle indexes.
+ * @param {readonly T[]} item Array that need to shuffle indexes.
  * @returns {T[]} An indexes shuffled array.
  * @example
  * ```ts
@@ -15,7 +15,7 @@ import { randomInt } from "node:crypto";
  * //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
  * ```
  */
-export function shuffleArray<T>(item: T[]): T[] {
+export function shuffleArray<T>(item: readonly T[]): T[] {
 	const itemClone: T[] = [...item];
 	const result: T[] = [];
 	while (itemClone.length > 0) {
