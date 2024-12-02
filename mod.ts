@@ -5,7 +5,7 @@ export type PseudoRandomNumberGenerator = () => number;
 /**
  * Shuffle the array's indexes.
  * @template {unknown} T
- * @param {T[]} item Array that need to shuffle indexes.
+ * @param {readonly T[]} item Array that need to shuffle indexes.
  * @param {PseudoRandomNumberGenerator} [prng=Math.random] A pseudo random number generator which takes zero arguments and returns a random number in the range of `>= 0` and `< 1`. This uses {@linkcode Math.random} by default, or specify a better pseudo random number generator.
  * @returns {T[]} An indexes shuffled array.
  * @example
@@ -19,7 +19,7 @@ export type PseudoRandomNumberGenerator = () => number;
  * //=> [42, 3, 26, 62, 93, 7, 76, 25, 92, 71]
  * ```
  */
-export function shuffleArray<T>(item: T[], prng: PseudoRandomNumberGenerator = Math.random): T[] {
+export function shuffleArray<T>(item: readonly T[], prng: PseudoRandomNumberGenerator = Math.random): T[] {
 	const itemClone: T[] = [...item];
 	const result: T[] = [];
 	while (itemClone.length > 0) {
