@@ -60,7 +60,7 @@ An ES (JavaScript & TypeScript) module to shuffle the array's indexes.
 ## 🧩 APIs
 
 - ```ts
-  function shuffleArray<T>(item: readonly T[], prng: PseudoRandomNumberGenerator = Math.random): T[];
+  function shuffleArray<T>(item: readonly T[], prng?: PseudoRandomNumberGenerator): T[];
   ```
 - ```ts
   type PseudoRandomNumberGenerator = () => number;
